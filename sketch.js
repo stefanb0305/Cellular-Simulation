@@ -44,13 +44,13 @@ class Cell {
     constructor(state) {
         this.prevState = state;
         this.state = state;
-        this.color = 255;
-        this.generation = 0;
     }
 
+    // Draws cell
     drawIt(x, y, res) {
-        fill(this.color);
-        stroke(this.color);
+        let color = 255;
+        fill(color);
+        stroke(color);
         rect(x, y, res, res);
     }
 
